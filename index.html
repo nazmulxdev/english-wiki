@@ -56,16 +56,21 @@
 
     <!-- nav bar -->
 
-    <div id="nav-bar" class="navbar sticky top-0 border-b-2 border-[#C6BDBD] bg-[#F8F8F8] px-24 py-5">
+    <div id="nav-bar"
+        class="navbar sticky top-0 z-50 border-b-2 border-[#C6BDBD] bg-gradient-to-br from-white/30  to-black/0 px-24 py-5">
         <div class="navbar-start">
             <p class="flex items-center space-x-1 poppins font-semibold text-xl leading-7 text-[#18181B]">English
                 <span><img src="assets/logo.png" alt=""></span><span
-                    class="hind-siliguri font-normal text-xl leading-7 text-[#000000]">জানালা</span></p>
+                    class="hind-siliguri font-normal text-xl leading-7 text-[#000000]">জানালা</span>
+            </p>
         </div>
         <div class="navbar-end space-x-4">
-            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i class="fa-solid fa-circle-question"></i>FAQ</a>
-            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i class="fa-solid fa-book-open"></i>Learn</a>
-            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"></i>Logout</a>
+            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
+                    class="fa-solid fa-circle-question"></i>FAQ</a>
+            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
+                    class="fa-solid fa-book-open"></i>Learn</a>
+            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
+                    class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
         </div>
     </div>
 
@@ -74,42 +79,307 @@
 
     <!-- hero section log In banner -->
 
-   <section id="hero-section" class="px-24 mb-48">
-    <div class="mx-auto grid grid-cols-2 items-center justify-between">
-        <!-- hero text -->
-        <div>
-               <h1 class="font-bold text-4xl mb-6"><span class="text-[#00BCFF]">English</span> is Easy!!</h1>
-               <p class="text-[#18181B80] font-normal text-2xl hind-siliguri mb-6">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
-               <div class="flex flex-col space-y-4">
-                <input type="text" placeholder="Enter Your Name" class="input" />
-               <input value="123456" type="password" placeholder="Enter Your Password (123456)" class="input" />
+    <section id="hero-section" class="px-24 mb-48">
+        <div class="mx-auto grid grid-cols-2 items-center justify-between mt-12">
+            <!-- hero text -->
+            <div>
+                <h1 class="font-bold text-4xl mb-6"><span class="text-[#00BCFF]">English</span> is Easy!!</h1>
+                <p class="text-[#18181B80] font-normal text-2xl hind-siliguri mb-6">আজ থেকেই আপনার ভাষা শেখার যাত্রা
+                    শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে
+                    যাবে অন্য একটি Level এ</p>
+                <div class="flex flex-col space-y-4">
+                    <input type="text" placeholder="Enter Your Name" class="input" />
+                    <input value="123456" type="password" placeholder="Enter Your Password (123456)" class="input" />
+                </div>
+                <button
+                    class="btn bg-[#422AD5] text-white rounded-lg border-none mt-4 font-semibold text-base px-4 py-2 hover:bg-[#00BCFF]">Get
+                    Started</button>
             </div>
-            <button class="btn bg-[#422AD5] text-white rounded-lg border-none mt-4 font-semibold text-base px-4 py-2 hover:bg-[#00BCFF]">Get Started</button>
+            <!-- hero image -->
+            <div>
+                <img class="w-full object-cover" src="assets/hero-student.png" alt="">
+            </div>
         </div>
-        <!-- hero image -->
-        <div>
-            <img class="w-full object-cover" src="assets/hero-student.png" alt="">
+    </section>
+
+
+
+
+    <!-- vocabulary section -->
+
+
+    <section class="px-24 text-center mb-40">
+        <!-- title -->
+        <h1 class="font-bold text-4xl leading-10 mb-10"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+        </h1>
+
+        <!-- lesson button -->
+        <div class="flex justify-center flex-wrap space-x-4 space-y-4 mb-10">
+            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white">
+                <i class="fa-solid fa-book-open"></i>Learn</a>
+            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
+                    class="fa-solid fa-book-open"></i>Learn</a>
+            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
+                    class="fa-solid fa-book-open"></i>Learn</a>
+            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
+                    class="fa-solid fa-book-open"></i>Learn</a>
+            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
+                    class="fa-solid fa-book-open"></i>Learn</a>
+            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
+                    class="fa-solid fa-book-open"></i>Learn</a>
+            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
+                    class="fa-solid fa-book-open"></i>Learn</a>
         </div>
-    </div>
-   </section> 
+
+        <!-- lesson -->
+        <!-- lesson selection alert -->
+        <div class="hidden bg-[#F8F8F8] py-16 rounded-lg">
+            <p class=" mb-3">আপনি এখনো কোন Lesson Select করেন nai</p>
+            <p class="font-bold text-4xl">একটি Lesson Select করুন।</p>
+        </div>
+
+
+        <!-- no lesson added alert -->
+        <div class="hidden bg-[#F8F8F8] py-16 rounded-lg">
+            <div><img class="mx-auto" src="assets/alert-error.png" alt=""></div>
+            <p class=" mb-3">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
+            <p class="font-bold text-4xl">নেক্সট Lesson এ যান</p>
+        </div>
+
+
+
+        <!-- vocabulary card section -->
+        <div class=" bg-[#F8F8F8] p-8 rounded-lg grid grid-cols-3 justify-center items-center gap-8">
+
+            <!-- card1 -->
+            <div>
+                <div class="card bg-white">
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Cookies!</h2>
+                        <p>We are using cookies for no reason.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn btn-ghost">Deny</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card bg-white">
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Cookies!</h2>
+                        <p>We are using cookies for no reason.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn btn-ghost">Deny</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card bg-white">
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Cookies!</h2>
+                        <p>We are using cookies for no reason.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn btn-ghost">Deny</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card bg-white">
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Cookies!</h2>
+                        <p>We are using cookies for no reason.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn btn-ghost">Deny</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card bg-white">
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Cookies!</h2>
+                        <p>We are using cookies for no reason.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn btn-ghost">Deny</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card bg-white">
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Cookies!</h2>
+                        <p>We are using cookies for no reason.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn btn-ghost">Deny</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card end -->
+        </div>
+    </section>
 
 
 
 
-   <!-- vocabulary section -->
+    <!-- frequently ask question -->
+
+    <section class="px-24 text-center mb-24">
+        <h1 class="font-bold text-4xl leading-10 mb-10"><span class="text-[#00BCFF]">Frequently</span> Asked Questions
+        </h1>
 
 
-   <section class="px-24 text-center">
-    <!-- title -->
-    <h1 class="font-bold text-4xl leading-10 "><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies</h1>
 
-    <!-- lesson button -->
-    <div></div>
+        <div class="space-y-5 text-start">
+            <div class="collapse collapse-plus bg-[#F8F8F8] rounded-lg">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title font-semibold">1. What is the difference between var, let, and const?</div>
+                <div class="collapse-content text-sm">
+                    <p>The differences between var, let and const is given below:</p><br>
+                    <ul>
+                        <li><span class="font-semibold">var:</span> Declares variables with function or global scope and
+                            allows re-declaration and updates
+                            within the same scope.</li><br>
+                        <li><span class="font-semibold">let:</span> Declares variables with block scope, allowing
+                            updates but not re-declaration within the
+                            same block.</li><br>
+                        <li><span class="font-semibold">const:</span> Declares block-scoped variables that cannot be
+                            reassigned after their initial
+                            assignment.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-[#F8F8F8] rounded-lg">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">2. What is the difference between map(), forEach(), and
+                    filter()?</div>
+                <div class="collapse-content text-sm">
+                    <p>The difference between map(), forEach(), and
+                        filter() is given below:</p><br>
+                    <ul>
+                        <li><span class="font-semibold">map() :</span> The map() function receives a function as a
+                            parameter and will apply the code on each element and returns an entirely new array. It will
+                            not change the original array.</li><br>
+                        <li><span class="font-semibold">forEach() :</span> The forEach() function receives a function as
+                            an argument and it applies the same code to every element. It will not return anything, it
+                            just applies the conditions to every element. It will not change the original array.</li>
+                        <br>
+                        <li><span class="font-semibold">filter() :</span> The filter() method receives function as a
+                            parameter. It runs the function for each element in the array. It will return the new array
+                            which satisfies the condition applied. It will not change the original array.</li>
+                    </ul>
 
-    <!-- lesson -->
-    <div></div>
-    <div></div>
-   </section>
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-[#F8F8F8] rounded-lg">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">3. Explain arrow functions and how they are different from
+                    regular functions?</div>
+                <div class="collapse-content text-sm">
+                    <p>Explaining arrow functions and how they are different from
+                        regular functions is given below :</p><br>
+                    <p><span class="font-semibold">Arrow Function: </span> An arrow function is a shorter syntax for
+                        writing functions in JavaScript. Introduced in ES6, arrow functions allow for a more concise and
+                        readable code, especially in cases of small functions.</p><br>
+                    <p><span class="font-semibold">differences between arrow function and regular function :</span>
+                        Arrow Function's syntax is shorter and more concise but the regular function needs the function
+                        keyword. <br> Arrow function can not be used as a constructor but regular function can be use as
+                        a constructor with new function. <br> Arrow function does't have its own arguments object but
+                        the regular function has its own object.</p>
+
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-[#F8F8F8] rounded-lg">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">4. How JavaScript Promises work?</div>
+                <div class="collapse-content text-sm">
+                    <p>The Promise object represents the eventual completion (or failure) of an asynchronous operation
+                        and its resulting value.Now, how promises work in java script is given below : </p><br>
+                    <ul>
+                        <li><span class="font-semibold">Pending :</span> This is the default state of a defined promise</li>
+                        <li><span class="font-semibold">Fulfilled :</span> This is the state of a successful promise</li>
+                        <li><span class="font-semibold">Rejected : </span> This is the state of a failed promise</li>
+                    </ul>
+                    <p>A promise goes from pending to fulfilled or form pending to rejected . The fulfilled and rejected are indicate the end of a promise. In this way promises work in java script.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-[#F8F8F8] rounded-lg">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">5. How closures work in JavaScript?</div>
+                <div class="collapse-content text-sm">
+                    <p>A closure is a function that allows access to variables from its outer function and global
+                        variables, even after the outer function has finished executing. This enables functions to
+                        “remember” their environment. In this manner closures work.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- footer section -->
+    <footer class="footer justify-between sm:footer-horizontal bg-white border-t-2 border-[#ffebeb] px-24 py-12">
+        <aside>
+            <p class="flex items-center space-x-1 poppins font-semibold text-xl leading-7 text-[#18181B]">English
+                <span><img src="assets/logo.png" alt=""></span><span
+                    class="hind-siliguri font-normal text-xl leading-7 text-[#000000]">জানালা</span>
+            </p>
+            <p class="hind-siliguri font-medium text-xl leading-7">ইংরেজি শিখুন সহজে</p>
+            <p class="font-normal text-base leading-7">Providing ED-Tech Applications since 2025</p>
+        </aside>
+        <nav>
+            <h6 class="footer-title">FOLLOW US</h6>
+            <div class="grid grid-flow-col gap-4">
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                        </path>
+                    </svg>
+                </a>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                    </svg>
+                </a>
+                <a>
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                </a>
+                <a>
+                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                </a>
+
+
+            </div>
+        </nav>
+    </footer>
+
 
     <!-- java script links -->
     <script src="styles/style.js"></script>
