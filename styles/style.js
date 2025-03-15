@@ -84,7 +84,10 @@ const loadLessonByButton = async (buttonId) => {
     const response = await fetch(`https://openapi.programming-hero.com/api/level/${buttonId}`);
     const data = await response.json();
     vocabularyCardSection.innerHTML = "";
-    displayLessonByButton(data.data);
+    if(data.data){
+        displayLessonByButton(data.data);
+    document.getElementById("loading-spinner").classList.add("hidden");
+    }
 }
 
 
@@ -113,6 +116,7 @@ const displayLessonButton = async (lessonButtons) => {
         learnButton.onclick = () => {
             loadLessonByButton(button.level_no);
             useActiveClass(event);
+            document.getElementById("loading-spinner").classList.remove("hidden");
         }
         learnButton.innerHTML = `
         <i class="fa-solid fa-book-open"></i> ${button.lessonName} - ${button.level_no}
