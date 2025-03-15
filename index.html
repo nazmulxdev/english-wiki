@@ -32,6 +32,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 
+    <!-- sweet alert cdn -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
 
     <!-- custom css -->
     <style>
@@ -57,7 +62,7 @@
     <!-- nav bar -->
 
     <div id="nav-bar"
-        class="navbar sticky top-0 z-50 border-b-2 border-[#C6BDBD] bg-gradient-to-br from-white/30  to-black/0 px-24 py-5">
+        class="hidden navbar sticky top-0 z-50 border-b-2 border-[#C6BDBD] bg-[#F8F8F8] px-24 py-5">
         <div class="navbar-start">
             <p class="flex items-center space-x-1 poppins font-semibold text-xl leading-7 text-[#18181B]">English
                 <span><img src="assets/logo.png" alt=""></span><span
@@ -65,11 +70,11 @@
             </p>
         </div>
         <div class="navbar-end space-x-4">
-            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
+            <a id="faq-button" class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
                     class="fa-solid fa-circle-question"></i>FAQ</a>
-            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
+            <a id="learn-more-button" class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
                     class="fa-solid fa-book-open"></i>Learn</a>
-            <a class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
+            <a id="logout-button" class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
                     class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
         </div>
     </div>
@@ -88,10 +93,10 @@
                     শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে
                     যাবে অন্য একটি Level এ</p>
                 <div class="flex flex-col space-y-4">
-                    <input type="text" placeholder="Enter Your Name" class="input" />
-                    <input value="123456" type="password" placeholder="Enter Your Password (123456)" class="input" />
+                    <input id="name-input-field" type="text" placeholder="Enter Your Name" class="input" />
+                    <input id="password-input-field" type="password" placeholder="Enter Your Password (123456)" class="input" />
                 </div>
-                <button
+                <button id="get-started-button"
                     class="btn bg-[#422AD5] text-white rounded-lg border-none mt-4 font-semibold text-base px-4 py-2 hover:bg-[#00BCFF]">Get
                     Started</button>
             </div>
@@ -108,7 +113,7 @@
     <!-- vocabulary section -->
 
 
-    <section class="px-24 text-center mb-40">
+    <section id="vocabulary-section" class="hidden px-24 text-center mt-4 mb-40">
         <!-- title -->
         <h1 class="font-bold text-4xl leading-10 mb-10"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
         </h1>
@@ -233,7 +238,7 @@
 
     <!-- frequently ask question -->
 
-    <section class="px-24 text-center mb-24">
+    <section id="frequently-ask-question-section" class="hidden px-24 text-center mb-24">
         <h1 class="font-bold text-4xl leading-10 mb-10"><span class="text-[#00BCFF]">Frequently</span> Asked Questions
         </h1>
 
@@ -305,11 +310,14 @@
                     <p>The Promise object represents the eventual completion (or failure) of an asynchronous operation
                         and its resulting value.Now, how promises work in java script is given below : </p><br>
                     <ul>
-                        <li><span class="font-semibold">Pending :</span> This is the default state of a defined promise</li>
-                        <li><span class="font-semibold">Fulfilled :</span> This is the state of a successful promise</li>
+                        <li><span class="font-semibold">Pending :</span> This is the default state of a defined promise
+                        </li>
+                        <li><span class="font-semibold">Fulfilled :</span> This is the state of a successful promise
+                        </li>
                         <li><span class="font-semibold">Rejected : </span> This is the state of a failed promise</li>
                     </ul>
-                    <p>A promise goes from pending to fulfilled or form pending to rejected . The fulfilled and rejected are indicate the end of a promise. In this way promises work in java script.</p>
+                    <p>A promise goes from pending to fulfilled or form pending to rejected . The fulfilled and rejected
+                        are indicate the end of a promise. In this way promises work in java script.</p>
                 </div>
             </div>
             <div class="collapse collapse-plus bg-[#F8F8F8] rounded-lg">
@@ -328,7 +336,7 @@
 
 
     <!-- footer section -->
-    <footer class="footer justify-between sm:footer-horizontal bg-white border-t-2 border-[#ffebeb] px-24 py-12">
+    <footer class="footer justify-between sm:footer-horizontal bg-[#F8F8F8] border-t-2 border-[#C6BDBD] px-24 py-12 mb-0">
         <aside>
             <p class="flex items-center space-x-1 poppins font-semibold text-xl leading-7 text-[#18181B]">English
                 <span><img src="assets/logo.png" alt=""></span><span
