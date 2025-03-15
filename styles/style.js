@@ -87,6 +87,7 @@ const loadLessonByButton = async (buttonId) => {
     if(data.data){
         displayLessonByButton(data.data);
     document.getElementById("loading-spinner").classList.add("hidden");
+    // document.getElementById("vocabulary-card-section").classList.remove("hidden");
     }
 }
 
