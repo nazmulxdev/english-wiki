@@ -5,7 +5,7 @@
 const navBar = document.getElementById("nav-bar");
 const heroSection = document.getElementById("hero-section");
 const vocabularySection = document.getElementById("vocabulary-section");
-const frequentlyAskQuestionSection = document.getElementById("frequently-ask-question-section");
+const frequentlyAskQuestionSection = document.getElementById("frequently_ask_question_section");
 
 
 

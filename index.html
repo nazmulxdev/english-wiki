@@ -40,6 +40,10 @@
 
     <!-- custom css -->
     <style>
+
+        html{
+            scroll-behavior: smooth;
+        }
         .poppins {
             font-family: "Poppins", sans-serif;
         }
@@ -70,9 +74,9 @@
             </p>
         </div>
         <div class="navbar-end space-x-4">
-            <a id="faq-button" class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
+            <a href="#frequently_ask_question_section" id="faq-button" class="btn  border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
                     class="fa-solid fa-circle-question"></i>FAQ</a>
-            <a id="learn-more-button" class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
+            <a href="#vocabulary-section" id="learn-more-button" class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
                     class="fa-solid fa-book-open"></i>Learn</a>
             <a id="logout-button" class="btn border-[#422AD5] text-[#422AD5] font-semibold text-base hover:bg-[#422AD5] hover:text-white"><i
                     class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
@@ -113,7 +117,7 @@
     <!-- vocabulary section -->
 
 
-    <section id="vocabulary-section" class="hidden px-24 text-center mt-4 mb-40">
+    <section id="vocabulary-section" class="hidden px-24 text-center mt-10 mb-40 scroll-mt-[8rem]">
         <!-- title -->
         <h1 class="font-bold text-4xl leading-10 mb-10"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
         </h1>
@@ -238,8 +242,8 @@
 
     <!-- frequently ask question -->
 
-    <section id="frequently-ask-question-section" class="hidden px-24 text-center mb-24">
-        <h1 class="font-bold text-4xl leading-10 mb-10"><span class="text-[#00BCFF]">Frequently</span> Asked Questions
+    <section id="frequently_ask_question_section" class="hidden px-24 text-center mt-2 mb-24 scroll-mt-[7.5rem]">
+        <h1 id="frequently-title" class="font-bold text-4xl leading-10 mb-10"><span class="text-[#00BCFF]">Frequently</span> Asked Questions
         </h1>
 
 
