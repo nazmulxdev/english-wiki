@@ -82,6 +82,8 @@ const loadLessonButton = async () => {
 
 
 const loadLessonByButton = async (buttonId) => {
+    // console.log(event.target);
+    event.target.classList.add("bg-[#422AD5]", "text-white");
     const response = await fetch(`https://openapi.programming-hero.com/api/level/${buttonId}`);
     const data = await response.json();
     vocabularyCardSection.innerHTML = "";
@@ -101,7 +103,7 @@ const displayLessonButton = async (lessonButtons) => {
         // console.log(button);
 
         const learnButton = document.createElement("a");
-        learnButton.className = "btn border-[#422AD5] text-[#422AD5] font-semibold text-sm hover:bg-[#422AD5] hover:text-white";
+        learnButton.className = "button-effect btn border-[#422AD5] text-[#422AD5] font-semibold text-sm hover:bg-[#422AD5] hover:text-white";
         learnButton.onclick = () => loadLessonByButton(button.level_no);
         learnButton.innerHTML = `
         <i class="fa-solid fa-book-open"></i> ${button.lessonName} - ${button.level_no}
@@ -158,7 +160,7 @@ function pronounceWord(word) {
     const utterance = new SpeechSynthesisUtterance(word);
     utterance.lang = 'en-EN'; // English
     window.speechSynthesis.speak(utterance);
-  }
+}
 
 
 
