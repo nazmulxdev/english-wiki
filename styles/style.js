@@ -63,3 +63,39 @@ document.getElementById("logout-button").addEventListener("click", (event) => {
     vocabularySection.classList.add("hidden");
     frequentlyAskQuestionSection.classList.add("hidden");
 })
+
+
+
+
+
+//load  lesson buttons
+
+const loadLessonButton=async()=>{
+    const response=await fetch("https://openapi.programming-hero.com/api/levels/all");
+    const data =await response.json();
+    displayLessonButton(data.data);
+}
+
+// display lesson buttons
+
+const loadButtonsSection = document.getElementById("lesson-buttons-section");
+const displayLessonButton=async (lessonButtons)=>{
+    console.log(lessonButtons);
+
+    lessonButtons.forEach(button => {
+        console.log(button);
+
+        const learnButton=document.createElement("a");
+        learnButton.className ="btn border-[#422AD5] text-[#422AD5] font-semibold text-sm hover:bg-[#422AD5] hover:text-white";
+        learnButton.innerHTML = `
+        <i class="fa-solid fa-book-open"></i> ${button.lessonName} - ${button.level_no}
+        `
+        loadButtonsSection.appendChild(learnButton);
+    });
+}
+
+
+
+
+
+loadLessonButton();
